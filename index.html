@@ -11,7 +11,7 @@
 <div class="shortcuts" aria-label="快捷请求"><button id="chat-refresh" class="secondary">刷新邮件状态</button><button id="chat-summary" class="secondary">总结最新进展</button><button id="chat-prepare" class="secondary">准备导师交流</button></div>
 <div id="messages" role="log" aria-label="对话记录" aria-live="polite"></div>
 <form id="chat-form" class="composer"><label for="advisor">关联导师（可选）</label><select id="advisor"><option value="">不限导师</option></select><label for="request" class="sr-only">消息</label><textarea id="request" maxlength="4000" rows="3" required placeholder="例如：刚才这两位导师，我该先准备哪些交流问题？"></textarea><div class="composer-bottom"><span class="muted">支持连续对话 · Ctrl / ⌘ + Enter 发送</span><button id="chat-send">发送</button></div><p id="chat-notice" role="status"></p></form>
-<p class="muted">快捷按钮会发送一条准备好的请求。仅刷新按钮检查真实邮箱；其他问题按你的要求处理。当前支持读取与整理，暂不代发邮件。</p>
+<p class="muted">快捷按钮会发送一条准备好的请求。仅刷新按钮检查真实邮箱；其他问题按你的要求处理。已支持按你的明确请求发送邮件；发送前核对内容，发送后核实结果。</p>
 <details id="legacy"><summary>查看此前任务</summary><div id="results"></div></details></section>
 <section id="advisors" hidden><div id="stats" class="stats"></div><p id="coverage" class="muted"></p><button id="refresh-mail" type="button">在对话中刷新邮件状态</button><div class="tools"><input id="search" placeholder="搜索姓名、学校、方向"><select id="filter"><option value="">全部状态</option><option>未收到回复</option><option>已有进展，等待回复</option><option>已有新回复，待处理</option><option>仅自动回复，等待答复</option></select><button id="export">导出 CSV</button></div><div id="rows"></div></section>
 </div></main><footer>香港时间 · 独立后台代理 · 电脑联网时处理任务</footer><script type="module" src="app.js?v=c8f55c0df1d3"></script></body></html>
